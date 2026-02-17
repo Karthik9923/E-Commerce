@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap');
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a.active hr{
+    display: block;
+}
+
+* {
+    font-family: Outfit;
+}
+
+
+.prata-regular {
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  
+@media (max-width: 640px) {
+    a.active{
+        background-color: black;
+        color:white;
+    }
+}
+
+.product-item img {
+    width: 100%; /* Make image responsive */
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the image fills the container without distortion */
+    border-radius: 8px; /* Optional: Adds rounded corners for better aesthetics */
+  }
+
+  
